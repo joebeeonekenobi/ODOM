@@ -81,7 +81,7 @@ O = function(elementTag){
 		return o;
 	}
 
-	o.child = function(targetChild){
+	o.addChild = function(targetChild){
 
 		targetChild.appendTo(o);
 
