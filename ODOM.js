@@ -43,6 +43,13 @@ O = function(elementTag){
 		return o;
 	}
 
+	o.emission = function(emitter, listenTo, func){
+
+		emitter.on(listenTo, func);
+
+		return o;
+	}
+
 	o.stopListening = function(listenTo, func){
 
 		o.element.removeEventListener(listenTo, func);
